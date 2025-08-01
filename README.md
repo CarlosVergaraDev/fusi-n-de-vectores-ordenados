@@ -20,17 +20,19 @@ Este proyecto es una aplicación web desarrollada con HTML, CSS y JavaScript pur
 
 ## 📁 Estructura del Proyecto
 
+```
 ├── README.md
 └── public
-    ├── css
-    │   └── style.css
-    ├── favicon-16x16.png
-    ├── favicon-32x32.png
-    ├── favicon.ico
-    ├── index.html
-    ├── js
-    │   └── script.js
-    └── site.webmanifest
+├── css
+│ └── style.css
+├── favicon-16x16.png
+├── favicon-32x32.png
+├── favicon.ico
+├── index.html
+├── js
+│ └── script.js
+└── site.webmanifest
+```
 
 
 
