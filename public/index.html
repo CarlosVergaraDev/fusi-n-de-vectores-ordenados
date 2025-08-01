@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusión de Vectores Ordenados</title>
+    <!-- Conexión a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Carga model-viewer -->
+   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+   <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+
+    <!-- Enlace a Iconos Font Awesome -->
+    <script src="https://kit.fontawesome.com/42774e4b93.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geostar&family=Ruslan+Display&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<model-viewer
+  src="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/main/2.0/Duck/glTF-Binary/Duck.glb"
+  alt="Pato 3D"
+  auto-rotate
+  camera-controls
+  exposure="1"
+  shadow-intensity="0.5"
+  camera-orbit="55deg 70deg 20m"
+  style="width: 100%; height: 250px;">
+
+</model-viewer>
+
+    <header class="encabezado">
+        <h1>#️⃣ Fusión de Vectores Ordenados</h1>
+        <p>Construye dos vectores ordenados (5 números c/u).</p>
+    </header>
+
+    <!-- Sección de Entrada de Datos -->
+    <section id="seccion-entrada" class="seccion-control">
+        <div class="grupo-input">
+            <input type="number" id="input-numero" placeholder="Introduce un número">
+            <div class="grupo-botones">
+                <button id="btn-add-v1">Añadir a Vector 1</button>
+                <button id="btn-add-v2">Añadir a Vector 2</button>
+            </div>
+        </div>
+        <p id="mensaje-error" class="error"></p>
+    </section>
+
+    <!-- Contenedor principal para los vectores -->
+    <main class="contenedor-vectores">
+        <div class="columna-vector">
+            <h2>Vector 1</h2>
+            <div id="columna-vector-1" class="area-vector"></div>
+        </div>
+        <div class="columna-vector">
+            <h2>Vector 2</h2>
+            <div id="columna-vector-2" class="area-vector"></div>
+        </div>
+    </main>
+
+    <!-- Sección de Fusión y Resultados -->
+    <section id="seccion-acciones" class="seccion-control seccion-oculta">
+        <button id="btn-mezclar">Mezclar Vectores</button>
+    </section>
+
+    <section id="seccion-resultado" class="seccion-oculta">
+        <h2>Resultado de la Fusión</h2>
+        <div id="resultado-fusion" class="area-vector resultado-final"></div>
+        <button id="btn-reiniciar">Empezar de Nuevo</button>
+    </section>
+
+
+    <footer> 
+      <div class="info-proyecto" > <p> SENA - Evidencia: GA3-220501093-AA3-EV02 </p> <a href="*" target="_blank">README.md</a> </div>
+      <div class="desarrollador"> <p>Desarrollado por: Carlos Vergara</p>  <a href="https://github.com/CarlosVergaraDev" target="_blank"> <i class="fa-brands fa-github fa-shake"></i> </a> </div>   
+    </footer>
+    
+    <!-- Conexión al archivo JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
